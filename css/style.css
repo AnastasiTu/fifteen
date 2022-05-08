@@ -1,0 +1,84 @@
+body,
+html {
+  font: 16px/1.4 Georgia, serif;
+}
+
+@media only screen and (max-width: 500px) {
+
+  body,
+  html {
+    font-size: 14px/1.4 Georgia, serif;
+  }
+}
+
+.page {
+  max-width: 400px;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  user-select: none;
+}
+
+h1 {
+  font: 2rem/1.2 Georgia, serif;
+  margin-bottom: 1em;
+}
+
+.game.gameShuffle {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.fifteen {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  background: #d6daf6;
+  margin-bottom: 1.5rem;
+}
+
+.item {
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 25%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: inset 1px 1px #e5d6f6;
+  transition: transform 0.2s, filter 0.5s;
+}
+
+.item__val {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84%;
+  height: 84%;
+  margin: 8%;
+  box-shadow: inset 0 0 0 2px #2e3dc5;
+}
+
+.fifteenWon .item {
+  filter: brightness(200%);
+
+}
+
+.button {
+  padding: 0.5em 1.5em;
+  color: #fff;
+  background: #000;
+  font: 1.2rem/1.4 Georgia, serif;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #2e3dc5;
+}
